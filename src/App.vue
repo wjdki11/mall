@@ -1,9 +1,23 @@
 <template>
   <div id="nav">
+    <router-view/>
+    <main-tab-bar/>
   </div>
-  <router-view/>
+
 </template>
 
-<style>
+<script>
+import MainTabBar from 'components/content/mainTabbar/MainTabBar';
 
+
+export default {
+  components: {
+    MainTabBar,
+  }
+}
+</script>
+
+
+<style>
+@import "assets/css/base.css";
 </style>
